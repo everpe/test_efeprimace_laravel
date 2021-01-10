@@ -71,7 +71,7 @@ class FilmController extends Controller
             $film->lenguaje_id=$leng->id;
             $film->original_lenguaje_id=$lengOrigin->id;
             $film->save();
-            echo('Pelicula Almacenada Correctamente');
+            echo('Pelicula Almacenada Correctamente, refresque la lista porfavor');
         }else{
             echo($validate->errors());
         }

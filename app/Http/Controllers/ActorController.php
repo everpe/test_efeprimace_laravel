@@ -37,7 +37,7 @@ class ActorController extends Controller
             $actor->first_name=$params['first_name'];
             $actor->last_name=$params['last_name'];
             $actor->save();
-            echo('Actor Creado Correctamente');
+            echo('Actor Creado Correctamente, Refesque la lista de Actores porfavor');
         }else{
             // SE PODRIAN MOSTRAR ESTOS MENSAJES DE ERROR CON JS
             echo($validate->errors());

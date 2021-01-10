@@ -17,15 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// // Actor routes
-// Route::get('actors', 'ActorController@index')->name('actors.index');
-// Route::get('actors/create', 'ActorController@create')->name('actors.create');
+
 Route::resource('actors','ActorController');
-// // Film routes
-// Route::get('films', 'FilmController@index')->name('films.index');
-// Route::get('films/{id}', 'FilmController@show')->name('films.show');
 
 Route::resource('films','FilmController');
-
 
 Route::post('search', 'FilmController@search')->name('films.search');

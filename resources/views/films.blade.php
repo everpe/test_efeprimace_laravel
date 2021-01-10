@@ -60,7 +60,7 @@
                     @endforeach
                     @else
                     <div class="alert alert-warning" role="alert">
-                        ¡No hay información para mostrar!
+                        ¡No se encuentra Infomración con ese titulo de pelicula!
                     </div>
                     @endif
               </tbody>
